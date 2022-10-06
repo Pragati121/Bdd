@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="7.505">
+    <testcase classname="Admin Action" name="Apply on Admin" time="0.036">
+        <failure message="Cannot invoke &quot;StepDefinition.PageFactory.GetAdmin()&quot; because &quot;this.pageFactory&quot; is null" type="java.lang.NullPointerException"><![CDATA[Given User is on Home Page..................................................failed
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "StepDefinition.PageFactory.GetAdmin()" because "this.pageFactory" is null
+	at StepDefinition.Step2.user_is_on_home_page(Step2.java:9)
+	at ✽.User is on Home Page(file:///C:/Users/PragatiSharma/IdeaProjects/HybridFramework/src/test/java/FeatureFile/Admin.feature:3)
+]]></failure>
+    </testcase>
+    <testcase classname="Login Action" name="Login to the website" time="7.167">
+        <system-out><![CDATA[Given User is on the Home Page..............................................passed
+And add Username and password...............................................passed
+When Click on Login.........................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
