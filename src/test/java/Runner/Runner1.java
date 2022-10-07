@@ -1,5 +1,4 @@
 package Runner;
-        import StepDefinition.Baseclass;
         import io.cucumber.junit.Cucumber;
         import io.cucumber.junit.CucumberOptions;
         import org.junit.runner.RunWith;
@@ -11,8 +10,7 @@ package Runner;
         plugin = {"pretty", "json:Report/Cucumber.json", "junit:Report/XMLReport.xml",
                 "html:Report/cucumberReport"}
 )
-class Runner1 {
-
+public class Runner1 {
 }
 
 

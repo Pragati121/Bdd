@@ -1,18 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="7.505">
-    <testcase classname="Admin Action" name="Apply on Admin" time="0.036">
-        <failure message="Cannot invoke &quot;StepDefinition.PageFactory.GetAdmin()&quot; because &quot;this.pageFactory&quot; is null" type="java.lang.NullPointerException"><![CDATA[Given User is on Home Page..................................................failed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="15.763">
+    <testcase classname="Admin" name="Apply on Admin" time="12.166">
+        <system-out><![CDATA[Given User is in Home Page..................................................passed
+And Click on Admin Option...................................................passed
+And Enter username  and employee name.......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="LoginUser" name="Login to the website" time="3.237">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=106.0.5249.103)&#10;Build info: version: '4.1.0', revision: '87802e897b'&#10;System info: host: 'MSDT095', ip: '10.10.30.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [76aa58e977c75dc202d2121c6aa22310, maximizeCurrentWindow {}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\PRAGAT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64486}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64486/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 76aa58e977c75dc202d2121c6aa22310" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[Given User is on the Login Page.............................................failed
+And add Username and password...............................................skipped
+When Click on Login.........................................................skipped
 
 StackTrace:
-java.lang.NullPointerException: Cannot invoke "StepDefinition.PageFactory.GetAdmin()" because "this.pageFactory" is null
-	at StepDefinition.Step2.user_is_on_home_page(Step2.java:9)
-	at ✽.User is on Home Page(file:///C:/Users/PragatiSharma/IdeaProjects/HybridFramework/src/test/java/FeatureFile/Admin.feature:3)
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.103)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'MSDT095', ip: '10.10.30.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [76aa58e977c75dc202d2121c6aa22310, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\PRAGAT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64486}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64486/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 76aa58e977c75dc202d2121c6aa22310
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:928)
+	at StepDefinition.Baseclass.setUpDriver(Baseclass.java:21)
+	at StepDefinition.LoginStepDefinition.user_is_on_the_Login_page(LoginStepDefinition.java:9)
+	at ✽.User is on the Login Page(file:///C:/Users/PragatiSharma/IdeaProjects/HybridFramework/src/test/java/FeatureFile/LoginUser.feature:3)
 ]]></failure>
-    </testcase>
-    <testcase classname="Login Action" name="Login to the website" time="7.167">
-        <system-out><![CDATA[Given User is on the Home Page..............................................passed
-And add Username and password...............................................passed
-When Click on Login.........................................................passed
-]]></system-out>
     </testcase>
 </testsuite>
